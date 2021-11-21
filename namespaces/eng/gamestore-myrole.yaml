@@ -3,6 +3,8 @@ kind: Role
 metadata:
   name: myrole
   namespace: gamestore
+  annotations:
+          configmanagement.gke.io/namespace-slector: gamestore-selector 
 rules:
 - apiGroups:
   - ""
